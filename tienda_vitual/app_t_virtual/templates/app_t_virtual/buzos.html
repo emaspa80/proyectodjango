@@ -1,0 +1,23 @@
+{% extends 'app_t_virtual/base.html' %}
+
+{% block titulo_principal %}<h1>Buzos Destacadas</h1> {% endblock %}
+
+{% block encabezado %}
+<h2>Original</h2>
+<h3>Divertido</h3>
+{% endblock %}
+
+{% block contenido %}
+<section> <!-- lo agregue  -->
+    <h2>Listado de buzos</h2>
+    {% for buzo in listado_buzos %}
+        <article>
+            <p>Nombre: {{buzo.nombre}}</p>
+            <p>Talle: {{buzo.talle}}</p>
+            <p>Precio: {{buzo.precio}}</p>
+        </article>
+    {% endfor %}
+
+    
+</section>
+{% endblock %}

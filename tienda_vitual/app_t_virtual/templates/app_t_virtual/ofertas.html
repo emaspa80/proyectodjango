@@ -1,0 +1,23 @@
+{% extends 'app_t_virtual/base.html' %}
+
+{% block titulo_principal %}<h1>Ofertas Destacadas</h1> {% endblock %} 
+
+{% block encabezado %}
+<h2>Lo mejor!</h2>
+<h3>mas moderno</h3>
+{% endblock %}
+
+{% block contenido %}
+<section> <!-- lo agregue  -->
+    <h2>Listado de ofertas</h2>
+    {% for oferta in listado_ofertas %}
+        <article>
+            <p>Nombre: {{oferta.nombre}}</p>
+            <p>Talle: {{oferta.talle}}</p>
+            <p>Precio: {{oferta.precio}}</p>
+        </article>
+    {% endfor %}
+
+    
+</section>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'app_t_virtual/base.html' %}
+
+{% block titulo_principal %}<h1>Remeras Destacadas</h1> {% endblock %}
+
+{% block encabezado %}
+<h2>Lo mejor!</h2>
+<h3>mas moderno</h3>
+{% endblock %}
+
+{% block contenido %}
+
+<section> <!-- lo agregue  -->
+    <h2>Listado de remeras</h2>
+    {% for remera in listado_remeras %}
+        <article>
+            <p>Nombre: {{remera.nombre}}</p>
+            <p>Talle: {{remera.talle}}</p>
+            <p>Precio: {{remera.precio}}</p>
+        </article>
+    {% endfor %}
+
+    
+</section>
+
+{% endblock %}
+
+
+
+

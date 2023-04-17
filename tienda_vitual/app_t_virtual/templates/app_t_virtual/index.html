@@ -1,0 +1,17 @@
+{% extends 'app_t_virtual/base.html' %}
+{% load static %}
+
+{% block titulo_principal %} <h1>Tienda Virtual</h1> {% endblock %}
+
+{% block encabezado %}
+<h2>DESCUBRENOS</h2>
+<p>Bienvenid@ <b>{{first_name}} {{last_name}}</b></p>
+{% endblock %}
+
+{% block contenido %}
+<!-- quite el listado de remeras  -->
+<section>
+    <h2></h2>
+    <img src="{% static 'app_t_virtual/img/remera_portada.jpg' %}" alt="Remera portada"> <!-- ver imagen   -->
+</section>
+{% endblock %}
