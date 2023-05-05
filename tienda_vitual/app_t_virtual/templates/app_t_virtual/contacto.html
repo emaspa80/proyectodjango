@@ -1,17 +1,20 @@
 {% extends 'app_t_virtual/base.html' %}
 
-{% block titulo_principal %}<h1>Contactanos</h1> {% endblock %} 
+{% block titulo_principal %}
+<h1>Contactanos</h1> 
+{% endblock %} 
 
 {% block encabezado %}
-<h2>Sobre nosotros</h2>
-<h3>Somos una empresa dedicada a la creación de remeras con diseños populares y personalizados</h3>
+<hr>
+<h3>Si tenes alguna consulta, no dudes en llenar el formulario de abajo.</h3>
+<hr>
 {% endblock %}
 
 {% block contenido %}
-<form>
-    <label for="">Nombre</label><input type="text">
-    <label for="">Apellido</label><input type="text">
-    <label for="">Teléfono</label><input type="text">
-    <label for="">Mensaje</label><input type="text">
+<form action='{% url 'contacto' %}' method="post">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <input type="submit" value="Contactar">
 </form>
+<hr>
 {% endblock %}

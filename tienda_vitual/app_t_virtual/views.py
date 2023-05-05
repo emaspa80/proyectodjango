@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseNotFound 
+from .forms import ContactoForm
 
 def index(request):
     context = {}     
@@ -97,8 +98,11 @@ def ofertas(request):
     return render(request, 'app_t_virtual/ofertas.html', context)
 
 def contacto(request): 
-    context = {}
+    context = {
+        'form': ContactoForm
+    }
     return render(request, 'app_t_virtual/contacto.html', context)
+
 
 
 # Create your views here.
