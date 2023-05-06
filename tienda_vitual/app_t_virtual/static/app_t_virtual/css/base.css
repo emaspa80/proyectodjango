@@ -7,3 +7,6 @@
 body {
     background-color: rgb(46,89,107);
 }
+.form-container {
+    margin: 0 25%;
+}

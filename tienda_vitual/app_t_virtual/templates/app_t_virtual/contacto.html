@@ -1,5 +1,5 @@
 {% extends 'app_t_virtual/base.html' %}
-
+{% load static %}
 {% block titulo_principal %}
 <h1>Contactanos</h1> 
 {% endblock %} 
@@ -11,10 +11,12 @@
 {% endblock %}
 
 {% block contenido %}
-<form action='{% url 'contacto' %}' method="post">
-    {% csrf_token %}
-    {{ form.as_p}}
-    <input type="submit" value="Contactar">
-</form>
+<div class='input-group mb-3'>
+    <form action='{% url 'contacto' %}' method="post" class='form-group d-flex-column'>
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Contactar" class="btn btn-primary">
+    </form>
+</div>
 <hr>
 {% endblock %}
