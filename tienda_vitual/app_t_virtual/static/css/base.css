@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    color: black;  
+}
+.navbar {
+    justify-content: space-around;
+}
+.span-offers {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    height: 45px;
+    line-height: 22px;
+    background-color: black;
+    text-align: center;
+}
+.main-img{
+    background-color: #2E596B;
+}
+.hot-sale {
+    background-image:linear-gradient(to right,#ff4d29, #ff4823);
+}
+.offers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    /* padding: 10%; */
+    background-color: grey;
+    & h1{
+        color:transparent;
+        font-family: fantasy;
+        font-weight: 600;
+        text-align: center;
+        -webkit-text-stroke: 0.25px black;
+        font-size: 160px;
+        background-image: url(../assets/t-shirt-offer.png);
+        background-clip: text;
+        -webkit-background-clip: text;
+            
+    }
+}

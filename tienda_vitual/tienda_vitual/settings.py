@@ -80,20 +80,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'db_tienda', #Se creo la base de datos en postgres
         'USER': 'postgres',
-        'PASSWORD': 'q1w2e3r4t5', #default es postgres
+        'PASSWORD': 'delfor', #default es postgres
         'HOST': 'localhost',
         'PORT': '5432',
      }
 }
-
-
-
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
- #       'NAME': BASE_DIR / 'db.sqlite3',
- #   }
-#}
 
 
 # Password validation

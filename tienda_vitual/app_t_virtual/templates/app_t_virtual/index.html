@@ -9,12 +9,15 @@
 {% endblock %} 
 {% block contenido %}
 <!-- quite el listado de remeras  -->
+<div class='hot-sale'>
+  <video src='https://brand.assets.adidas.com/image/upload/q_auto,vc_auto/esAR/Images/hotweek-ar-mh-d_tcm216-1023720.mp4' preload='auto' autoplay loop playsinline webkit-playsinline x5-playsinline style= 'width: 100%; height: 100%'></video>
+</div>
 <!-- ver imagen   -->
-<section class="container-fluid">
+<div class="container-fluid main-img">
   <img
     class="img-fluid"
-    src="{% static 'app_t_virtual/img/remera_portada.jpg' %}"
+    src="{% static 'img/remera_portada.jpg' %}"
     alt="Remera portada" 
     />
-</section>
+</div>
 {% endblock %}

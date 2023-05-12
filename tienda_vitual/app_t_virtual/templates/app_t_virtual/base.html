@@ -11,16 +11,23 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous" 
       />
-    <link rel="icon" href="..\static\app_t_virtual\img\django-icon-0.jpg">
+    <link rel="icon" href="..\static\img\django-icon-0.jpg">
     <title>Django E-Commerce</title>
-    <link rel="stylesheet" href="{% static 'app_t_virtual/css/base.css' %}" />
     <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class='d-flex justify-content-center span-offers'>
+        &#128165; HOT SALE &#128165;
+      </div>
+    </header>
+      <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Django E-Commerce</a>
+          <a class="navbar-brand" href="#">
+            <img src='{% static 'img/django-icon-0.jpg' %}' alt="Logo" width="32" height="30" class="d-inline-block align-text-top"/>
+            Django E-Commerce
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -57,15 +64,6 @@
           </div>
         </div>
       </nav>
-      {% block titulo_principal %} 
-        <h1>Tienda Virtual</h1> 
-      {% endblock %}
-
-      {% block encabezado %}
-        <h2>DESCUBRENOS</h2>
-        <p>Bienvenid@ <b>{{first_name}} {{last_name}}</b></p>
-      {% endblock %}
-    </header>
     <main>
         {% block contenido %} 
 
@@ -73,6 +71,7 @@
     </main>
     <footer>
         {% include 'app_t_virtual/components/anuncio.html' %}
+        
         {% filter upper %}
           <p>Tienda Virtual 2023. Todos los derechos Reservados.</p>
         {% endfilter %}
