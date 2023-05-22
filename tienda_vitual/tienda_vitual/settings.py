@@ -37,14 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'corsheaders',
+    'corsheaders',
     'app_t_virtual',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    # 'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'db_tienda', #Se creo la base de datos en postgres
         'USER': 'postgres',
         'PASSWORD': 'delfor', #default es postgres
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '5432',
      }
 }
@@ -130,4 +130,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #To install // minute: 1.00.26
 #Cors authorization
-# CORS_ORIGIN_WHITELIST = ['http://localhost:5173']
+CORS_ORIGIN_WHITELIST = [
+    'http://127.0.0.1:5173',
+    ]

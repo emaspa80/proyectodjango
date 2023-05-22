@@ -1,25 +1,11 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import {getApi} from "./api/tiendaVirtual.api";
-import { useEffect } from "react";
+import './App.css'
 
-const App = () => {
-  useEffect(() => {
-    async function loadApi() {
-      const res = await getApi();
-      console.log(res)
-    }
-    loadApi()
-  }, []);
-
+function App() {
   return (
-    <BrowserRouter>
-    
-      <Routes>
-        <Route path='/' element={<Navigate to='' />} />
-        {/* <Route path="" element={}/> */}
-      </Routes>
-    </BrowserRouter>
-  );
-};
+    <>
+      Hola Mundo
+    </>
+  )
+}
 
-export default App;
+export default App
