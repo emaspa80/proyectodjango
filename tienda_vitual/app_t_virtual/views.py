@@ -1,6 +1,8 @@
-from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseNotFound 
-from .forms import ContactoForm
+from django.contrib import messages
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
+from .forms import ContactoForm, AltaClienteForm, AltaClienteFormModel
+from .models import Productos
 
 def index(request):
     context = {}     
@@ -11,31 +13,12 @@ def gracias(request, nombre):
 
 def remeras(request):
     
-    listado_remeras = [
-        {
-            'nombre': 'Remera Totoro',
-            'talle': 'S',
-            'precio': 1500,
-            'valid': False,
-        },
-        {
-            'nombre': 'Remera Bowser',
-            'talle': 'M',
-            'precio': 1800,
-            'valid': False,
-        },
-        {
-            'nombre': 'Remera SEGA',
-            'talle': 'L',
-            'precio': 2000,
-            'valid': False,
-        },
-    ]
+    context = {}
+    
+    listado = Productos.objects.filter(producto = 'Remera').order_by('producto')
+    
+    context['listado_remeras'] = listado
 
-    context = {
-        #agregar las lineas con las demas listas buzos ...    
-        'listado_remeras': listado_remeras
-    }
     return render(request, 'app_t_virtual/remeras.html', context)
 
 def buzos(request): 
@@ -97,12 +80,35 @@ def ofertas(request):
     
     return render(request, 'app_t_virtual/ofertas.html', context)
 
+def listar_productos(request):
+    context = {}
+    
+    listado = Productos.objects.all().order_by('producto')
+    
+    context['listado_productos'] = listado
+
+    return render(request, 'app_t_virtual/listar_productos.html', context)
+
 def contacto(request): 
     context = {
         'form': ContactoForm
     }
     return render(request, 'app_t_virtual/contacto.html', context)
 
+def alta_clientes(request):
+    context = {}
+    if request.method == "POST":
+        form = AltaClienteFormModel(request.POST)
+        if form.is_valid():
+            form.save()
+
+            messages.add_message(request, messages.SUCCESS, 'Formulario completado con éxito')
+            return redirect("index")
+    else:
+        form = AltaClienteFormModel()
+
+    context["form"] = form
+    return render(request, 'app_t_virtual/alta_clientes.html', context)
 
 
 # Create your views here.
