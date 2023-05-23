@@ -1,0 +1,22 @@
+{% extends 'app_t_virtual/base.html' %}
+{% load static %}
+{% block titulo_principal %}
+<h1>Alta de Clientes</h1> 
+{% endblock %} 
+
+{% block encabezado %}
+<hr>
+<h3>Debe llenar el siguiente formulario</h3>
+<hr>
+{% endblock %}
+
+{% block contenido %}
+<div class='input-group mb-3'>
+    <form action='{% url 'alta_clientes' %}' method="post" class='form-group d-flex-column'>
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Enviar" class="btn btn-primary">
+    </form>
+</div>
+<hr>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'app_t_virtual/base.html' %}
+
+{% block titulo_principal %}<h1>Listado de Productos</h1> {% endblock %}
+
+{% block encabezado %}
+<h2>Lo mejor!</h2>
+<h3>mas moderno</h3>
+{% endblock %}
+
+{% block contenido %}
+
+<section> <!-- lo agregue  -->
+    <h2>Listado de Productos</h2>
+    {% for producto in listado_productos %}
+        <article>
+            <p>Nombre: {{producto.nombre}}</p>
+            <p>Producto: {{producto.producto}}</p>
+            <p>Precio: {{producto.precio}}</p>
+            <p>Talle: {{producto.talle}}</p>
+        </article>
+    
+    {% empty %}
+
+    {% endfor %}
+
+    
+</section>
+
+{% endblock %}
+
+
+
+
