@@ -11,12 +11,16 @@
 
 <section> <!-- lo agregue  -->
     <h2>Listado de remeras</h2>
-    {% for remera in listado_remeras %}
+    {% for producto in listado_remeras %}
         <article>
-            <p>Nombre: {{remera.nombre}}</p>
-            <p>Talle: {{remera.talle}}</p>
-            <p>Precio: {{remera.precio}}</p>
+            <p>Nombre: {{producto.nombre}}</p>
+            <p>Producto: {{producto.producto}}</p>
+            <p>Precio: {{producto.precio}}</p>
+            <p>Talle: {{producto.talle}}</p>
         </article>
+    
+    {% empty %}
+
     {% endfor %}
 
     
