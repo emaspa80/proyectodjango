@@ -80,8 +80,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'db_tienda', #Se creo la base de datos en postgres
         'USER': 'postgres',
-        'PASSWORD': 'q1w2e3r4t5', #default es postgres
-        'HOST': 'localhost',
+        'PASSWORD': 'postgres', #default es postgres
+        'HOST': '127.0.0.1',
         'PORT': '5432',
      }
 }
