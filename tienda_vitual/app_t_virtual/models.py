@@ -17,7 +17,8 @@ class Productos(models.Model):
 
 class Clientes(models.Model):
     nombre=models.CharField(max_length=30)
-    direccion=models.CharField(max_length=50)
+    apellido=models.CharField(max_length=50)
     email=models.EmailField()
     telefono=models.CharField(max_length=11)
+    dni=models.IntegerField(null=True)
     pedidos = models.ForeignKey(Pedidos, on_delete=models.CASCADE, null=True) # muchos a uno pedidos a clientes
