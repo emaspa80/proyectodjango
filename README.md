@@ -7,24 +7,12 @@ Curso Django de Codo a Codo 4.0 - Comisión #23316 - Prof: Luciano Pueyo
 
 ## 🧍‍♂️ Integrantes
 
-| <img src="https://media.licdn.com/dms/image/C4D03AQFP9wC198ysRQ/profile-displayphoto-shrink_800_800/0/1571186357871?e=1687392000&v=beta&t=-UI3G8N1o3H6QCZD_9W1_UiGccXKESgoGvm0ROlUz38" width=50>| <img src="https://media.licdn.com/dms/image/D4D35AQGUA9Ghv3Kpcw/profile-framedphoto-shrink_800_800/0/1675060387655?e=1682190000&v=beta&t=sotJVoHhOgVQw5ObkTCS8qnW6Q5UEc0MMaco3xMDmqs" width=50>| <img src="https://media.licdn.com/dms/image/C5603AQHZPwUXVmTR1g/profile-displayphoto-shrink_800_800/0/1517850881480?e=1686787200&v=beta&t=cpzH1YHGxsfh3rl-1s2aZKHUUmoGnCwM_WrjwzvRemE" width=50>| <img src="https://media.licdn.com/dms/image/D4E35AQGJMm6u9vnnLg/profile-framedphoto-shrink_800_800/0/1669562459745?e=1682190000&v=beta&t=f6xhqSkrT0laqVs9Oan--hhT6wBnF41-q-RIbhFhH7I" width=50>|
-|:-:|:-:|:-:|:-:|
+| <img src="https://media.licdn.com/dms/image/C4D03AQFP9wC198ysRQ/profile-displayphoto-shrink_800_800/0/1571186357871?e=1687392000&v=beta&t=-UI3G8N1o3H6QCZD_9W1_UiGccXKESgoGvm0ROlUz38" width=50>| <img src="https://media.licdn.com/dms/image/C4E03AQFYDDVbLaE1rA/profile-displayphoto-shrink_200_200/0/1571003973161?e=1690416000&v=beta&t=VrPTd80us00RXt_MHRFbKmlOxBq75ZsO9Yq68f4A8Bo" width=50>| <img src="https://avatars.githubusercontent.com/u/94173190?v=4" width=50>| <img src="https://avatars.githubusercontent.com/u/101070819?v=4" width=50>| <img src="https://media.licdn.com/dms/image/C4E03AQEwILYFaZyX2w/profile-displayphoto-shrink_200_200/0/1628473938226?e=1690416000&v=beta&t=J8zsZAx7ZgXBH18aC23ueJi1VF520gPiXoyA06Z-PcA" width=50>|
+|:-:|:-:|:-:|:-:|:-:|
 | **Cristian Nehuén Apablaza Ortega** | **Angel Guillermo Diaz Fermin** | **Delfor Fuentes** | **Hernán Cazeneuve** | **Emanuel Spadone** |
 | <a href="https://github.com/nehuenortega"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/nehuenortega/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/agdiazfermin"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/angel-guillermo-diaz-fermin/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/Delfor29"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/delfor-fuente-87115a237/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/HernanCazeneuve"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/hern%C3%A1n-cazeneuve-44007a1b0/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/emaspa80"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/emanuel-spadone-7678b2219/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
 
 <hr/>
-
-• Cristian Nehuén Apablaza Ortega - carrazanmaria@gmail.com
-
-• Luciano Blank - lublank@gmail.com
-
-• Gonzalo Díaz Rusconi - gonzalo.diazrusconi@gmail.com
-
-• Ezequiel Martin Alasia  - elencapuchado@gmail.com
-
-• Jose De Felippe - josdef07@gmail.com
-
-
 
 ## 💻 Tecnología
 
