@@ -61,6 +61,12 @@
               </li>
             </ul>
           </div>
+          {% if user.is_authenticated %}
+            <p>Bienvenido\a, {{user.username}}. </p>
+          {% else %} 
+            <button type="button" class="btn btn-outline-primary me-2">Iniciar Sesion</button>
+            <button type="button" class="btn btn-dark">Registrarse</button>
+          {% endif %}
         </div>
       </nav>
       {% block titulo_principal %} 
