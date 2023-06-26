@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import ContactoForm, AltaClienteForm, AltaClienteFormModel
 from .models import Productos
+from django.contrib.auth.decorators import login_required
 
 def index(request):
     context = {}     
@@ -94,7 +95,8 @@ def contacto(request):
         'form': ContactoForm
     }
     return render(request, 'app_t_virtual/contacto.html', context)
-
+    
+@login_required(login_url='/admin/login/')
 def alta_clientes(request):
     context = {}
     if request.method == "POST":
