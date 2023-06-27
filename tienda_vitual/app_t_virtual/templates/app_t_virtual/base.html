@@ -9,72 +9,75 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous" 
-      />
-    <link rel="icon" href="..\static\img\django-icon-0.jpg">
+      crossorigin="anonymous" />
+    <link rel="icon" href="..\static\img\django-icon-0.jpg" />
     <title>Django E-Commerce</title>
     <!-- css -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}" />
   </head>
   <body>
     <header>
-      <div class='d-flex justify-content-center span-offers'>
+      <div class="d-flex justify-content-center span-offers">
         &#128165; HOT SALE &#128165;
       </div>
     </header>
-      <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src='{% static 'img/django-icon-0.jpg' %}' alt="Logo" width="32" height="30" class="d-inline-block align-text-top"/>
-            Django E-Commerce
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="{% url 'index' %}"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'remeras' %}">Remeras</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'buzos' %}">Buzos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'ofertas' %}">Ofertas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+      <div class="container navbar-right">
+        <a class="navbar-brand me-2" href="#">
+          <img src='{% static 'img/django-icon-0.jpg' %}' alt="Logo" width="32"
+          height="30" class="d-inline-block align-text-top"/> Django E-Commerce
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="{% url 'index' %}"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'remeras' %}">Remeras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'buzos' %}">Buzos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'ofertas' %}">Ofertas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+        <div class="d-flex align-items-center">
+          <button type="button" class="btn btn-link px-3 me-2">Login</button>
+          <button type="button" class="btn btn-primary me-3">
+            Sign up for free
+          </button>
+        </div>
+      </div>
+    </nav>
     <main>
-        {% block contenido %} 
-
-        {% endblock %}
+      {% block contenido %} {% endblock %} 
+      {% include 'app_t_virtual/components/anuncio.html' %}
     </main>
-    <footer>
-        {% include 'app_t_virtual/components/anuncio.html' %}
-        
-        {% filter upper %}
-          <p>Tienda Virtual 2023. Todos los derechos Reservados.</p>
-        {% endfilter %}
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">Grupo 1</a>
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

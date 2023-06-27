@@ -7,9 +7,6 @@ body {
     background-color: #fff;
     color: black;  
 }
-.navbar {
-    justify-content: space-around;
-}
 .span-offers {
     display: flex;
     place-items: center;
@@ -25,25 +22,33 @@ body {
     background-color: #2E596B;
 }
 .hot-sale {
-    background-image:linear-gradient(to right,#ff4d29, #ff4823);
+    background-color: transparent;
 }
 .offers {
     display: flex;
     justify-content: center;
     align-items: center;
-    height:200px;
-    /* padding: 10%; */
+    height: 200px;
+    margin-top: 6px;
     background-color: grey;
-    & h1{
+    & h1 {
         color:transparent;
         font-family: fantasy;
         font-weight: 600;
         text-align: center;
         -webkit-text-stroke: 0.25px black;
-        font-size: 160px;
+        font-size: 100px;
         background-image: url(../assets/t-shirt-offer.png);
+        background-position: center center;
         background-clip: text;
         -webkit-background-clip: text;
-            
     }
+}
+.contact-container {
+    width: 100%;
+    background-color: #2E596B;
+    color: #f0f0f0;
+}
+.enviar{
+    margin-top: 15px;
 }
